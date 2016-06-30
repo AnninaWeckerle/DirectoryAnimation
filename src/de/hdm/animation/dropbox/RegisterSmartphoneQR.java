@@ -25,7 +25,9 @@ public class RegisterSmartphoneQR extends JFrame {
     private static final long serialVersionUID = 1L;
 
     public RegisterSmartphoneQR(String friendlyName, String bluetoothAddress) {
-        super("Register Smartphone " + friendlyName);
+//        super("Register Smartphone " + friendlyName)
+        super(friendlyName);
+
         try {
             setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             JPanel registerPanel = new JPanel();
